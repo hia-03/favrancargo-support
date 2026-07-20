@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Служба поддержки приложения Favran Cargo" />
+  <title>Favran Cargo — Поддержка</title>
+  <style>
+    :root {
+      --green: #0b7a4b;
+      --green-dark: #075f3a;
+      --bg: #f3faf6;
+      --card: #ffffff;
+      --text: #17211b;
+      --muted: #66736b;
+      --border: #dfe9e3;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #eaf7ef 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 56px 0 28px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 104px;
+      height: 104px;
+      border-radius: 24px;
+      object-fit: contain;
+      background: #fff;
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 30px rgba(11, 122, 75, 0.12);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 6vw, 48px);
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      max-width: 650px;
+      margin: 14px auto 0;
+      font-size: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 26px;
+      margin: 18px 0;
+      box-shadow: 0 12px 32px rgba(20, 60, 38, 0.06);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 25px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+    }
+
+    .contact {
+      display: block;
+      padding: 17px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      color: var(--text);
+      text-decoration: none;
+      background: #fbfefc;
+    }
+
+    .contact:hover {
+      border-color: var(--green);
+      transform: translateY(-1px);
+    }
+
+    .label {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .value {
+      font-weight: 700;
+      word-break: break-word;
+    }
+
+    .faq details {
+      border-top: 1px solid var(--border);
+      padding: 16px 0;
+    }
+
+    .faq details:first-of-type {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .notice {
+      padding: 15px 17px;
+      border-left: 4px solid var(--green);
+      background: #eef9f2;
+      border-radius: 12px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 22px 0 42px;
+      font-size: 14px;
+    }
+
+    .lang {
+      color: var(--green-dark);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img class="logo" src="logo.png" alt="Favran Cargo logo" />
+      <h1>Favran Cargo — Поддержка</h1>
+      <p class="subtitle">
+        Здесь пользователи приложения могут получить помощь, задать вопрос
+        или сообщить о проблеме.
+      </p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Связаться с нами</h2>
+        <div class="contact-grid">
+          <a class="contact" href="tel:+992985493597">
+            <span class="label">Телефон поддержки</span>
+            <span class="value">+992 985 493 597</span>
+          </a>
+
+          <a class="contact" href="mailto:habibullozoda1963@icloud.com">
+            <span class="label">Электронная почта</span>
+            <span class="value">habibullozoda1963@icloud.com</span>
+          </a>
+
+          <a class="contact" href="https://t.me/umarmm17" target="_blank" rel="noopener noreferrer">
+            <span class="label">Telegram</span>
+            <span class="value">@umarmm17</span>
+          </a>
+        </div>
+
+        <p class="notice">
+          При обращении укажите номер телефона аккаунта, модель устройства
+          и краткое описание проблемы. Не отправляйте пароль или код подтверждения.
+        </p>
+      </section>
+
+      <section class="card faq">
+        <h2>Частые вопросы</h2>
+
+        <details>
+          <summary>Не удаётся войти в приложение</summary>
+          <p>
+            Проверьте правильность номера телефона и пароля. Код страны +992 уже
+            указан в поле входа, поэтому в приложении вводите только оставшиеся 9 цифр.
+          </p>
+        </details>
+
+        <details>
+          <summary>Не отображается информация о грузе</summary>
+          <p>
+            Проверьте трек-код и подключение к интернету. Если информация не появилась,
+            отправьте трек-код нашей службе поддержки.
+          </p>
+        </details>
+
+        <details>
+          <summary>Как изменить данные профиля?</summary>
+          <p>
+            Откройте раздел «Профиль» в приложении и выберите нужный пункт для изменения
+            имени, даты рождения или фотографии.
+          </p>
+        </details>
+
+        <details>
+          <summary>Как удалить аккаунт?</summary>
+          <p>
+            Отправьте запрос на электронную почту службы поддержки с номера или адреса,
+            связанного с аккаунтом. После проверки личности запрос будет обработан.
+          </p>
+        </details>
+      </section>
+
+      <section class="card">
+        <h2>Маълумот бо забони тоҷикӣ</h2>
+        <p>
+          Барои гирифтани кӯмак ба рақами
+          <span class="lang">+992 985 493 597</span> занг занед,
+          ба почтаи электронӣ нависед ё тавассути Telegram муроҷиат кунед.
+          Ҳангоми муроҷиат рақами телефон, модели дастгоҳ ва шарҳи кӯтоҳи мушкилотро нависед.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Favran Cargo. Все права защищены.
+    </footer>
+  </div>
+</body>
+</html>
